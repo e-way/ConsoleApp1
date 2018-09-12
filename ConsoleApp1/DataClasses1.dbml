@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AdventureWorks2017" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-V4UNJHJ;Initial Catalog=AdventureWorks2017;Integrated Security=True" SettingsObjectName="ConsoleApp1.Properties.Settings" SettingsPropertyName="AdventureWorks2017ConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.uspGetBillOfMaterials" Method="uspGetBillOfMaterials">
+    <Parameter Name="StartProductID" Parameter="startProductID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CheckDate" Parameter="checkDate" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="uspGetBillOfMaterialsResult">
+      <Column Name="ProductAssemblyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ComponentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ComponentDesc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TotalQuantity" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="StandardCost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="ListPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="BOMLevel" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="RecursionLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
